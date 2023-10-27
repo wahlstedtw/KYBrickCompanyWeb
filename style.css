@@ -1,0 +1,50 @@
+/* Primary Color (Based on the blue from the logo) */
+:root {
+    --primary-color: #0033A0;  /* This is an approximate value for the blue color */
+    --secondary-color: #FF0000;  /* This is an approximate value for the red color */
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;  /* Assuming a modern font similar to the logo */
+    background-color: #f2f2f2;
+    color: var(--primary-color);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+/* Buttons */
+.button {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #e60000;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 20px 0;
+}
