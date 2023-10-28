@@ -6,6 +6,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
 }
 
 header {
@@ -14,10 +16,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #e5e5e5;
 }
 
 header .logo {
-    width: 50px;
+    width: 75px;
     height: auto;
 }
 
@@ -31,30 +35,38 @@ nav ul {
 nav li a {
     text-decoration: none;
     color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+nav li a:hover {
+    text-decoration: underline;
 }
 
 .button {
     background-color: blue;
     color: white;
-    padding: 0.5em 1em;
+    padding: 0.7em 1.5em;
     text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .main-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 5em;
-    padding: 0 5%;  /* Padding to avoid content touching edge */
+    margin-top: 6em;
+    margin-bottom: 6em;
+    padding: 0 5%;
 }
 
 .left-column {
-    flex: 50%;
-    text-align: right;
-    padding-right: 2em;
-}
-
-.left-content {
     flex: 50%;
     text-align: right;
     padding-right: 2em;
@@ -74,6 +86,7 @@ nav li a {
     display: flex;
     justify-content: space-between;
     padding: 2em 5%;
+    margin-top: 4em; /* Added space between main content and featured content */
 }
 
 .feature h2 {
@@ -81,7 +94,17 @@ nav li a {
 }
 
 footer {
-    background-color: #fff;
+    background-color: #f8f8f8;
     padding: 1em 5%;
     margin-top: auto;
+    padding-top: 2em;
+}
+
+@media screen and (max-width: 768px) {
+    .header, .footer, .main-content {
+        padding: 20px;
+    }
+    img {
+        max-width: 100%;
+    }
 }
